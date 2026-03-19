@@ -1,0 +1,174 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 0 20px rgba(56,189,248,0.08);
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(56,189,248,0.15);
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.name {
+  text-align: center;
+}
+
+.name p {
+  color: var(--muted);
+}
+
+.copy-box {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.copy-box span {
+  color: var(--accent);
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.copy-box button {
+  background: linear-gradient(45deg, #38bdf8, #6366f1);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #0f172a;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h3 { margin: 0 0 10px 0; }
+p { color: var(--muted); }
+
+/* 🔥 PRICE CARD */
+.price-card {
+  background: #020617;
+  border: 1px solid rgba(255, 200, 0, 0.3);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 200, 0, 0.3);
+}
+
+.flag {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.price-card h2 {
+  margin: 5px 0;
+}
+
+.price {
+  font-size: 32px;
+  color: gold;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.buy-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #f59e0b, #b45309);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  transform: scale(1.05);
+}
+
+.proj {
+  background: #0f172a;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+.ukuran{
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
