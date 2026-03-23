@@ -1,1 +1,116 @@
-<h1>SERVER ARE MAINTANCE!</h1>
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TeamRudys</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- 🔥 TOKEN GATE -->
+<div id="gate">
+  <h2>Masukkan Token 🔑</h2>
+  
+  <input type="text" id="tokenInput" placeholder="Masukkan token...">
+  
+  <button onclick="cekToken()">MASUK</button>
+
+  <!-- 🔥 TOMBOL KE WEB TOKEN -->
+  <a id="getTokenBtn" href="./image/index.html">
+    Ambil Token
+  </a>
+
+  <p id="error"></p>
+</div>
+
+<!-- 🔥 WEB UTAMA -->
+<div id="mainContent">
+
+<div class="container">
+
+  <!-- LEFT -->
+  <aside class="card">
+    <div class="avatar">
+      <img src="./image/pro.jpeg">
+    </div>
+
+    <div class="name">
+      <h1>TEAMRUDYS</h1>
+    </div>
+
+    <div class="copy-box">
+      CURRENT WORLD
+      <span id="copyText">RUDLO91</span>
+      <button onclick="copyText(this)">Copy</button>
+    </div>
+
+    <p class="status">
+      <span class="dot"></span>73.847 Player Online
+    </p>
+
+    <div class="tags">
+      <span class="tag">OUR TEAM PROVIDES SEVERAL GAMES</span>
+    </div>
+  </aside>
+
+  <!-- RIGHT -->
+  <main class="right">
+    <section class="card">
+      <center><h3>JOIN OUR TEAM</h3></center>
+
+      <div class="price-card">
+        <h2>REME/LEME RIGHT</h2>
+        <div class="price">200<img src="./image/bgl.png" class="ukuran"></div>
+        <p class="muted">No ID Required</p>
+        <a href="https://wa.me/6282155481797?text=Halo%20bang%20saya%20mau%20join%20Reme%20kanan">
+          <button class="buy-btn">JOIN NOW</button>
+        </a>
+      </div>
+
+      <div class="price-card">
+        <h2>REME/LEME LEFT</h2>
+        <div class="price">150<img src="./image/bgl.png" class="ukuran"></div>
+        <p class="muted">No ID Required</p>
+        <a href="https://wa.me/6282155481797?text=Halo%20bang%20saya%20mau%20join%20Reme%20kiri">
+          <button class="buy-btn">JOIN NOW</button>
+        </a>
+      </div>
+
+      <div class="price-card">
+        <h2>CASINO RIGHT</h2>
+        <div class="price">150<img src="./image/bgl.png" class="ukuran"></div>
+        <p class="muted">No ID Required</p>
+        <a href="https://wa.me/6282155481797?text=Halo%20bang%20saya%20mau%20join%20Casino%20kanan">
+          <button class="buy-btn">JOIN NOW</button>
+        </a>
+      </div>
+
+      <div class="price-card">
+        <h2>CASINO LEFT</h2>
+        <div class="price">100<img src="./image/bgl.png" class="ukuran"></div>
+        <p class="muted">No ID Required</p>
+        <a href="https://wa.me/6282155481797?text=Halo%20bang%20saya%20mau%20join%20Casino%20kiri">
+          <button class="buy-btn">JOIN NOW</button>
+        </a>
+      </div>
+
+      <div class="price-card">
+        <h2>FULL HOST</h2>
+        <div class="price">250<img src="./image/bgl.png" class="ukuran"></div>
+        <p class="muted">No ID Required</p>
+        <a href="https://wa.me/6282155481797?text=Halo%20bang%20saya%20mau%20join%20Full%20Host">
+          <button class="buy-btn">JOIN NOW</button>
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+</div>
+</div>
+<script src="script.js"></script>
+
+</body>
+          </html>
