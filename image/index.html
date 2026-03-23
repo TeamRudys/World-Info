@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Token</title>
+
+<style>
+body {
+  background: linear-gradient(135deg, #044f48, #2a7561);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+.box {
+  background: rgba(0,0,0,0.5);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #248A52;
+  color: white;
+  cursor: pointer;
+}
+.token {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  word-break: break-all;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>GET TOKEN 🔑</h2>
+  <p>Klik tombol untuk mendapatkan token</p>
+
+  <button onclick="ambilToken()">GET TOKEN</button>
+
+  <div class="token" id="result">-</div>
+</div>
+
+<script>
+// 🔥 TOKEN LU (FIX)
+const TOKENS = [
+  "YFDIWHDKE9O3K",
+  "YFD9DH9SH",
+  "YFD8SBWON",
+  "YFD0DN2NSOP",
+  "YFDBSOD9WH",
+  "YFD9WNOSNNSK",
+  "YFDOWB9992NSBS",
+  "YFD9SJ2NSK",
+  "YFD0D03JEOSJ",
+  "YFDKKWOSWBW2O",
+  "YFD0EJ2NWJ",
+  "YFDOWHBEHH3OSB2",
+  "YFD0S00WJBBBE9J",
+  "YFDNNXLANSLPPE9",
+  "YFD0SBPANNNWIRH",
+  "YORI"
+];
+
+function ambilToken() {
+  const token = TOKENS[Math.floor(Math.random() * TOKENS.length)];
+
+  // tampilkan ke layar
+  document.getElementById("result").innerText = token;
+
+  // simpan ke browser
+  localStorage.setItem("token", token);
+
+  // auto copy
+  navigator.clipboard.writeText(token);
+
+  // auto redirect ke web utama (index.html)
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
